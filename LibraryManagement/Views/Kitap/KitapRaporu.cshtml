@@ -1,0 +1,21 @@
+﻿@model List<dynamic>
+
+<h2>Kitap Raporu</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ISBN</th>
+            <th>Toplam Süre (Saat)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ISBN</td>
+                <td>@item.ToplamSure</td>
+            </tr>
+        }
+    </tbody>
+</table>
